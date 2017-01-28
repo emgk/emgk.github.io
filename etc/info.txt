@@ -1,0 +1,4 @@
+<div class="ve_info">
+<h4> Got something to say? Need help? </h4>
+<span> Write your thought <a href="https://wordpress.org/support/plugin/visual-text-editor"> here</a>.</span>
+</div>
