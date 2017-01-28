@@ -1,14 +1,4 @@
-<div class="ve_info" style="
-    background: #7bff81;
-    padding: 12px;
-    width: 97%;
-    border: solid 1px #34ca3b;
-    box-shadow: 1px 0px 6px 2px #eaeaea;
-">
-<h4 style="
-    margin: 0px;
-    font-size: 16px;
-    padding: 5px 0px;
-"> Got something to say? Need help? </h4>
+<div class="ve_info" style="background: #7bff81;padding: 12px;width: 97%;border: solid 1px #34ca3b;box-shadow: 1px 0px 6px 2px #eaeaea;">
+<h4 style="margin: 0px;font-size: 16px;padding: 5px 0px;"> Got something to say? Need help? </h4>
 <span> Write your thought <a href="https://wordpress.org/support/plugin/visual-text-editor"> here</a>.</span>
 </div>
