@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+     <loc>https://npmjs.com/package/guten-block-fields/</loc>
+     <lastmod>2018-08-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://npmjs.com/package/guten-block-fields/1-intro/</loc>
+     <lastmod>2018-08-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://npmjs.com/package/guten-block-fields/2-fields/</loc>
+     <lastmod>2018-08-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://npmjs.com/package/guten-block-fields/3-toggles/</loc>
+     <lastmod>2018-08-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://npmjs.com/package/guten-block-fields/4-demo/</loc>
+     <lastmod>2018-08-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://npmjs.com/package/guten-block-fields/author/</loc>
+     <lastmod>2018-08-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+</urlset>

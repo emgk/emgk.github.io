@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Fields - Guten Block Fields</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Fields";
+    var mkdocs_page_input_path = "2-fields.md";
+    var mkdocs_page_url = "/package/guten-block-fields/2-fields/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Guten Block Fields</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Guten Block Fields</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../1-intro/">JSON file</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Fields</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#fields">Fields</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#text">Text</a></li>
+        
+            <li><a class="toctree-l3" href="#radio">Radio</a></li>
+        
+            <li><a class="toctree-l3" href="#color">Color</a></li>
+        
+            <li><a class="toctree-l3" href="#date-time">Date Time</a></li>
+        
+            <li><a class="toctree-l3" href="#button">Button</a></li>
+        
+            <li><a class="toctree-l3" href="#button-group">Button Group</a></li>
+        
+            <li><a class="toctree-l3" href="#range-slider">Range Slider</a></li>
+        
+            <li><a class="toctree-l3" href="#textarea">Textarea</a></li>
+        
+            <li><a class="toctree-l3" href="#tree">Tree</a></li>
+        
+            <li><a class="toctree-l3" href="#select">Select</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../3-toggles/">Toggles</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../4-demo/">Demo</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../author/">Author</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Guten Block Fields</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Fields</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="http://github.com/emgk/emgk.github.io/doc/edit/master/docs/2-fields.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="fields">Fields</h1>
+<p>Include the field(s) you want to generate for your blocks.</p>
+<p>Below are the list of various fields: </p>
+<hr />
+<h2 id="text">Text</h2>
+<p>Render text field.</p>
+<p><strong>Source</strong>: <code>&lt;TextControl /&gt;</code>     </p>
+<h3 id="options">Options:</h3>
+<ul>
+<li><code>title</code> <em>string</em> Title for your field.</li>
+<li><code>id</code> <em>string</em> ID for your field, should be unique for each field.</li>
+<li><code>type</code> <em>string</em> Type of field. ["Text"]</li>
+<li><code>value</code> <em>string</em> Default value.</li>
+<li><code>toggle</code> <em>string</em> Id of the toggle.</li>
+</ul>
+<h3 id="example">Example</h3>
+<pre><code>{
+    &quot;title&quot;: &quot;Name&quot;,
+    &quot;id&quot;: &quot;name&quot;,
+    &quot;type&quot;: &quot;text&quot;,
+    &quot;value&quot;: &quot;&quot;,
+    &quot;toggle&quot;: &quot;bio&quot;
+}
+</code></pre>
+
+<hr />
+<h2 id="radio">Radio</h2>
+<p>Render radio options.</p>
+<p><strong>Source</strong>: <code>&lt;RadioControl /&gt;</code>     </p>
+<h3 id="options_1">Options:</h3>
+<ul>
+<li><code>title</code> <em>string</em> Title for your field.</li>
+<li><code>id</code> <em>string</em> ID for your field, should be unique for each field.</li>
+<li><code>type</code> <em>string</em> Type of field. ["radio"]</li>
+<li><code>option</code> <em>string</em> Default option value.</li>
+<li><code>toggle</code> <em>string</em> Id of the toggle. </li>
+<li><code>options</code> <em>array</em> List of radio options.</li>
+</ul>
+<h3 id="example_1">Example</h3>
+<pre><code>{
+    &quot;title&quot;: &quot;Gender&quot;,
+    &quot;id&quot;: &quot;gender&quot;,
+    &quot;option&quot;: &quot;m&quot;,
+    &quot;toggle&quot;: &quot;bio&quot;,
+    &quot;type&quot;: &quot;radio&quot;,
+    &quot;options&quot;: [
+        {
+            &quot;label&quot;: &quot;Male&quot;,
+            &quot;value&quot;: &quot;m&quot;
+        },
+        {
+            &quot;label&quot;: &quot;Female&quot;,
+            &quot;value&quot;: &quot;f&quot;
+        }
+    ]
+}
+</code></pre>
+
+<hr />
+<h2 id="color">Color</h2>
+<p>Render Color Picker.</p>
+<p><strong>Source</strong>: <code>&lt;ColorPalette /&gt;</code>     </p>
+<h3 id="options_2">Options:</h3>
+<ul>
+<li><code>title</code> <em>string</em> - Title for your field.</li>
+<li><code>id</code> <em>string</em> - ID for your field, should be unique for each field.</li>
+<li><code>type</code> <em>string</em> - Type of field. ["color"]</li>
+<li><code>value</code> <em>string</em> - Default color.</li>
+<li><code>toggle</code> <em>string</em> - ID of the toggle. </li>
+<li><code>colors</code> <em>array</em> - List of colors.</li>
+</ul>
+<h3 id="example_2">Example</h3>
+<pre><code>{
+    &quot;title&quot;: &quot;Background Color&quot;,
+    &quot;id&quot;: &quot;background-color&quot;,
+    &quot;type&quot;: &quot;color&quot;,
+    &quot;colors&quot;: [
+        {
+            &quot;name&quot;: &quot;Red&quot;,
+            &quot;color&quot;: &quot;#f00&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Black&quot;,
+            &quot;color&quot;: &quot;#000&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Blue&quot;,
+            &quot;color&quot;: &quot;#00f&quot;
+        }
+    ]
+}
+</code></pre>
+
+<hr />
+<h2 id="date-time">Date Time</h2>
+<p>Render Date Time picker.</p>
+<p><strong>Source</strong>: <code>&lt;DateTimePicker /&gt;</code>     </p>
+<h3 id="options_3">Options:</h3>
+<ul>
+<li><code>title</code> <em>string</em> Title for your field.</li>
+<li><code>id</code> <em>string</em> ID for your field, should be unique for each field.</li>
+<li><code>type</code> <em>string</em> Type of field. ["datetime"]</li>
+<li><code>option</code> <em>string</em> Default option value.</li>
+<li><code>toggle</code> <em>string</em> Id of the toggle. </li>
+<li><code>is12hours</code> <em>boolean</em> True if 12 hours.</li>
+<li><code>locale</code> <em>string</em> Locale</li>
+</ul>
+<h3 id="example_3">Example</h3>
+<pre><code>{
+    &quot;title&quot;: &quot;Date Time&quot;,
+    &quot;id&quot;: &quot;date-time&quot;,
+    &quot;value&quot;: &quot;12/12/2018&quot;,
+    &quot;toggle&quot;: &quot;bio&quot;,
+    &quot;type&quot;: &quot;datetime&quot;,
+    &quot;is12hours&quot;: true,
+    &quot;locale&quot;: &quot;es-US&quot;,
+}
+</code></pre>
+
+<hr />
+<h2 id="button">Button</h2>
+<p>Render Button.</p>
+<p><strong>Source</strong>: <code>&lt;Button /&gt;</code>     </p>
+<h3 id="options_4">Options:</h3>
+<ul>
+<li><code>title</code> <em>string</em> Button label.</li>
+<li><code>id</code> <em>string</em> ID for your field, should be unique for each field.</li>
+<li><code>type</code> <em>string</em> Type of field. ["datetime"]</li>
+<li><code>toggle</code> <em>string</em> Id of the toggle.</li>
+<li><code>isDefault</code> <em>boolean</em> is default.</li>
+</ul>
+<h3 id="example_4">Example</h3>
+<pre><code>{
+    &quot;title&quot;: &quot;Save Changes&quot;,
+    &quot;id&quot;: &quot;button&quot;,
+    &quot;toggle&quot;: &quot;bio&quot;,
+    &quot;type&quot;: &quot;button&quot;,
+    &quot;isDefault&quot;: true,
+}
+</code></pre>
+
+<hr />
+<h2 id="button-group">Button Group</h2>
+<p>Render Button Group.</p>
+<p><strong>Source</strong>: <code>&lt;ButtonGroup /&gt;</code>     </p>
+<h3 id="options_5">Options:</h3>
+<ul>
+<li><code>title</code> <em>string</em> Button Group label.</li>
+<li><code>id</code> <em>string</em> ID for your field, should be unique for each field.</li>
+<li><code>type</code> <em>string</em> Type of field. ["button-group"]</li>
+<li><code>toggle</code> <em>string</em> Id of the toggle.</li>
+<li><code>buttons</code> <em>object</em> List of button.</li>
+</ul>
+<h3 id="example_5">Example</h3>
+<pre><code>{
+    &quot;title&quot;: &quot;Button Actions&quot;,
+    &quot;id&quot;: &quot;button&quot;,
+    &quot;toggle&quot;: &quot;bio&quot;,
+    &quot;isDefault&quot;: true,
+    &quot;buttons&quot;: [
+        {
+            &quot;label&quot;: &quot;Left&quot;,
+            &quot;isPrimary&quot;: true,
+            &quot;class&quot;: &quot;left&quot;
+        },
+        {
+            &quot;label&quot;: &quot;Right&quot;,
+            &quot;isPrimary&quot;: false,
+            &quot;class&quot;: &quot;right&quot;
+        }
+    ]
+}
+</code></pre>
+
+<hr />
+<h2 id="range-slider">Range Slider</h2>
+<p>Render range slider.</p>
+<p><strong>Source</strong>: <code>&lt;RangeControl /&gt;</code>     </p>
+<h3 id="options_6">Options:</h3>
+<ul>
+<li><code>title</code> <em>string</em> Title for your field.</li>
+<li><code>id</code> <em>string</em> ID for your field, should be unique for each field.</li>
+<li><code>type</code> <em>string</em> Type of field. ["range"]</li>
+<li><code>value</code> <em>string</em> Default value.</li>
+<li><code>toggle</code> <em>string</em> Id of the toggle.</li>
+<li><code>min</code> <em>float</em> Minimum number.</li>
+<li><code>max</code> <em>float</em> Maximum number.</li>
+</ul>
+<h3 id="example_6">Example</h3>
+<pre><code>{
+    &quot;title&quot;: &quot;Volume&quot;,
+    &quot;id&quot;: &quot;volume&quot;,
+    &quot;type&quot;: &quot;range&quot;,
+    &quot;value&quot;: &quot;50&quot;,
+    &quot;toggle&quot;: &quot;bio&quot;,
+    &quot;min&quot;: &quot;1&quot;,
+    &quot;max&quot;: &quot;100&quot;
+}
+</code></pre>
+
+<hr />
+<h2 id="textarea">Textarea</h2>
+<p>Render text area.</p>
+<p><strong>Source</strong>: <code>&lt;TextareaControl /&gt;</code>     </p>
+<h3 id="options_7">Options:</h3>
+<ul>
+<li><code>title</code> <em>string</em> Title for textarea.</li>
+<li><code>id</code> <em>string</em> Field ID, should be unique for each field.</li>
+<li><code>type</code> <em>string</em> Type of field. ["textarea"]</li>
+<li><code>value</code> <em>string</em> Default value.</li>
+<li><code>toggle</code> <em>string</em> Id of the toggle.</li>
+<li><code>row</code> <em>integer</em> Number of rows</li>
+</ul>
+<h3 id="example_7">Example</h3>
+<pre><code>{
+    &quot;title&quot;: &quot;Introduction&quot;,
+    &quot;id&quot;: &quot;introduction&quot;,
+    &quot;type&quot;: &quot;textarea&quot;,
+    &quot;value&quot;: &quot;&quot;,
+    &quot;toggle&quot;: &quot;bio&quot;,
+    &quot;row&quot;: &quot;30&quot;
+}
+</code></pre>
+
+<hr />
+<h2 id="tree">Tree</h2>
+<p>Render Tree view.</p>
+<p><strong>Source</strong>: <code>&lt;TreeSelect /&gt;</code>     </p>
+<h3 id="options_8">Options:</h3>
+<ul>
+<li><code>title</code> <em>string</em> Title for TreeSelect dropdown.</li>
+<li><code>id</code> <em>string</em> Field ID, should be unique for each field.</li>
+<li><code>type</code> <em>string</em> Type of field. ["tree"]</li>
+<li><code>optionlabel</code> <em>string</em> Option label.</li>
+<li><code>selectedId</code> <em>string</em> Default Selected option id.</li>
+<li><code>toggle</code> <em>string</em> Id of the toggle.</li>
+<li><code>tree</code> <em>Array</em> Tree options. </li>
+</ul>
+<h3 id="example_8">Example</h3>
+<pre><code>{
+    &quot;title&quot;: &quot;Select Post&quot;,
+    &quot;type&quot; : &quot;tree&quot;,
+    &quot;optionlabel&quot;: &quot;Select option&quot;,
+    &quot;selectedId&quot;: &quot;p211&quot;,
+    &quot;tree&quot;:[
+        {
+            name: 'Post 1',
+            id: 'p1',
+            children: [
+                { name: 'Descend 1 of post 1', id: 'p11' },
+                { name: 'Descend 2 of post 1', id: 'p12' },
+            ],
+        },
+        {
+            name: 'post 2',
+            id: 'p2',
+            children: [
+                {
+                    name: 'Descend 1 of post 2',
+                    id: 'p21',
+                    children: [
+                        {
+                            name: 'Descend 1 of Descend 1 of post 2',
+                            id: 'p211',
+                        },
+                    ],
+                },
+            ],
+        },
+    ]     
+}
+</code></pre>
+
+<hr />
+<h2 id="select">Select</h2>
+<p>Render dropdown.</p>
+<p><strong>Source</strong>: <code>&lt;SelectControl /&gt;</code>     </p>
+<h3 id="options_9">Options:</h3>
+<ul>
+<li><code>title</code> <em>string</em> Title for your field.</li>
+<li><code>id</code> <em>string</em> ID for your field, should be unique for each field.</li>
+<li><code>type</code> <em>string</em> Type of field. ["select"]</li>
+<li><code>option</code> <em>string</em> Default option value.</li>
+<li><code>toggle</code> <em>string</em> Id of the toggle. </li>
+<li><code>options</code> <em>array</em> List of dropdown options.</li>
+</ul>
+<h3 id="example_9">Example</h3>
+<pre><code>{
+    &quot;title&quot;: &quot;Country&quot;,
+    &quot;id&quot;: &quot;country&quot;,
+    &quot;type&quot;: &quot;select&quot;,
+    &quot;value&quot;: &quot;india&quot;,
+    &quot;options&quot;: [
+        {
+            &quot;label&quot;: &quot;India&quot;,
+            &quot;value&quot;: &quot;india&quot;
+        },
+        {
+            &quot;label&quot;: &quot;USA&quot;,
+            &quot;value&quot;: &quot;usa&quot;
+        }
+    ]
+}
+</code></pre>
+
+<hr />
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../3-toggles/" class="btn btn-neutral float-right" title="Toggles">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../1-intro/" class="btn btn-neutral" title="JSON file"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="http://github.com/emgk/emgk.github.io/doc/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../1-intro/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../3-toggles/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
