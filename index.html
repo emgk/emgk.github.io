@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Govind Kumar | WordPress Developer</title>
-  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
-  <meta name="author" content="Vincent Garreau" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link href="https://fonts.googleapis.com/css?family=Gudea|Patua+One|Shadows+Into+Light" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
-  <link rel="stylesheet" media="screen" href="css/style.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css"/>
-
+    <meta charset="utf-8">
+    <title>Govind Kumar | Full stack dev</title>
+    <!--  <meta name="description" content="">-->
+    <meta name="author" content="Govind Kumar"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Gudea|Patua+One|Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
 </head>
 <body>
-    <div class="social_container" style="
+<div class="social_container" style="
     position: absolute;
     bottom: auto;
     top: 0;
@@ -21,87 +21,89 @@
     margin-right: 29px;
 ">
 
-   <a href="http://fb.me/luv.gk" target="_blank"> <div class="icons">
-      <div class="icon">
-        <i class="fa fa-facebook"></i> 
-      </div>
-      <div class="icon_details">
-        Faceboook
-      </div>
-    </div></a>
-
-   <a href="http://twitter.com/variable_gk" target="_blank"> <div class="icons">
-      <div class="icon">
-        <i class="fa fa-twitter"></i> 
-      </div>
-      <div class="icon_details">
-        Twitter
-      </div>
-    </div></a>
-
-
-<a href="https://profiles.wordpress.org/gkloveweb/" target="_blank">
-     <div class="icons">
-      <div class="icon">
-        <i class="fa fa-wordpress"></i> 
-      </div>
-      <div class="icon_details">
-        Wordpress
-      </div>
-    </div></a>
-
-     <a href="http://wordpress.stackexchange.com/users/90674/govind-kumar" target="_blank"><div class="icons">
-      <div class="icon">
-        <i class="fa fa-stack-overflow"></i> 
-      </div>
-      <div class="icon_details">
-        Stack Overflow
-      </div>
-    </div>
+    <a href="http://fb.me/luv.gk" target="_blank">
+        <div class="icons">
+            <div class="icon">
+                <i class="fa fa-facebook"></i>
+            </div>
+            <div class="icon_details">
+                Faceboook
+            </div>
+        </div>
     </a>
 
-     <a href="https://github.com/emgk" target="_blank"><div class="icons">
-      <div class="icon">
-        <i class="fa fa-github"></i> 
-      </div>
-      <div class="icon_details">
-        Github
-      </div>
-    </div>
+    <a href="http://twitter.com/variable_gk" target="_blank">
+        <div class="icons">
+            <div class="icon">
+                <i class="fa fa-twitter"></i>
+            </div>
+            <div class="icon_details">
+                Twitter
+            </div>
+        </div>
     </a>
 
-   <a href="mailto:gkprmr@gmail.com" target="_blank"><div class="icons">
-      <div class="icon">
-        <i class="fa fa-envelope-o"></i> 
-      </div>
-      <div class="icon_details">
-        Send me email
-      </div>
-    </div>
+
+    <a href="https://profiles.wordpress.org/gkloveweb/" target="_blank">
+        <div class="icons">
+            <div class="icon">
+                <i class="fa fa-wordpress"></i>
+            </div>
+            <div class="icon_details">
+                Wordpress
+            </div>
+        </div>
     </a>
-   
+
+    <a href="http://wordpress.stackexchange.com/users/90674/govind-kumar" target="_blank">
+        <div class="icons">
+            <div class="icon">
+                <i class="fa fa-stack-overflow"></i>
+            </div>
+            <div class="icon_details">
+                Stack Overflow
+            </div>
+        </div>
+    </a>
+
+    <a href="https://github.com/emgk" target="_blank">
+        <div class="icons">
+            <div class="icon">
+                <i class="fa fa-github"></i>
+            </div>
+            <div class="icon_details">
+                Github
+            </div>
+        </div>
+    </a>
+
+    <a href="mailto:gkprmr@gmail.com" target="_blank">
+        <div class="icons">
+            <div class="icon">
+                <i class="fa fa-envelope-o"></i>
+            </div>
+            <div class="icon_details">
+                Send me email
+            </div>
+        </div>
+    </a>
 
 
 </div>
 <div class="text_container">
-  <h1> Govind Kumar_</h1>
- </div>
-
+    <h1> Govind Kumar_</h1>
+</div>
 <!-- scripts -->
 <script src="js/app.js"></script>
-
 <!-- stats.js -->
 <script src="js/lib/stats.js"></script>
 <script>
-  var  update;
-
-  update = function() {
-    stats.begin();
- 
+    var update;
+    update = function () {
+        stats.begin();
+        requestAnimationFrame(update);
+    };
     requestAnimationFrame(update);
-  };
-  requestAnimationFrame(update);
 </script>
-
 </body>
 </html>
