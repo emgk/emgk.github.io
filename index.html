@@ -5,114 +5,97 @@
     <title>Govind Kumar | Full stack dev</title>
     <!--<meta name="description" content="">-->
     <meta name="author" content="Govind Kumar"/>
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link href="https://fonts.googleapis.com/css?family=Gudea|Patua+One|Shadows+Into+Light" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
-    <link rel="stylesheet" media="screen" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- Modern Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" media="screen" href="css/style.css">
 </head>
 <body>
-<div class="social_container" style="
-    position: absolute;
-    bottom: auto;
-    top: 0;
-    right: 0;
-    margin-right: 29px;
-">
+    <!-- Optional: If particles.js is being injected/used by app.js -->
+    <div id="particles-js"></div>
+    <div class="blur-bg"></div>
 
-    <a href="http://fb.me/luv.gk" target="_blank">
-        <div class="icons">
-            <div class="icon">
-                <i class="fa fa-facebook"></i>
-            </div>
-            <div class="icon_details">
-                Faceboook
-            </div>
-        </div>
-    </a>
+    <main class="container">
+        <header class="profile-header">
+            <h1 class="name">Govind Kumar</h1>
+            <p class="tech-stack">Software Engineer | React.js, JS & PHP | WP | Linux, Docker</p>
+        </header>
+        
+        <ul class="social-links">
+            <li>
+                <a href="http://fb.me/luv.gk" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <span>Facebook</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://x.com/gkloveweb" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <span>Twitter</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://profiles.wordpress.org/gkloveweb/" target="_blank" rel="noopener noreferrer" aria-label="WordPress">
+                    <i class="fa fa-wordpress" aria-hidden="true"></i>
+                    <span>WordPress</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://wordpress.stackexchange.com/users/90674/govind-kumar" target="_blank" rel="noopener noreferrer" aria-label="Stack Overflow">
+                    <i class="fa fa-stack-overflow" aria-hidden="true"></i>
+                    <span>Stack Overflow</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/emgk" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                    <span>GitHub</span>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:gkprmr@gmail.com" aria-label="Email">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <span>Email</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://cv-six-delta-30.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="CV">
+                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                    <span>CV</span>
+                </a>
+            </li>
+        </ul>
+    </main>
 
-    <a href="http://twitter.com/variable_gk" target="_blank">
-        <div class="icons">
-            <div class="icon">
-                <i class="fa fa-twitter"></i>
-            </div>
-            <div class="icon_details">
-                Twitter
-            </div>
-        </div>
-    </a>
-
-
-    <a href="https://profiles.wordpress.org/gkloveweb/" target="_blank">
-        <div class="icons">
-            <div class="icon">
-                <i class="fa fa-wordpress"></i>
-            </div>
-            <div class="icon_details">
-                Wordpress
-            </div>
-        </div>
-    </a>
-
-    <a href="http://wordpress.stackexchange.com/users/90674/govind-kumar" target="_blank">
-        <div class="icons">
-            <div class="icon">
-                <i class="fa fa-stack-overflow"></i>
-            </div>
-            <div class="icon_details">
-                Stack Overflow
-            </div>
-        </div>
-    </a>
-
-    <a href="https://github.com/emgk" target="_blank">
-        <div class="icons">
-            <div class="icon">
-                <i class="fa fa-github"></i>
-            </div>
-            <div class="icon_details">
-                Github
-            </div>
-        </div>
-    </a>
-
-    <a href="mailto:gkprmr@gmail.com" target="_blank">
-        <div class="icons">
-            <div class="icon">
-                <i class="fa fa-envelope-o"></i>
-            </div>
-            <div class="icon_details">
-                Send me email
-            </div>
-        </div>
-    </a>
-
-
-</div>
-<div class="text_container">
-    <h1> Govind Kumar_</h1>
-</div>
-<!-- scripts -->
-<script src="js/app.js"></script>
-<!-- stats.js -->
-<script src="js/lib/stats.js"></script>
-<script>
-    var update;
-    update = function () {
-        stats.begin();
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/app.js"></script>
+    <!-- stats.js -->
+    <script src="js/lib/stats.js"></script>
+    <script>
+        var update;
+        update = function () {
+            if (typeof stats !== 'undefined' && stats.begin) {
+                stats.begin();
+            }
+            requestAnimationFrame(update);
+        };
         requestAnimationFrame(update);
-    };
-    requestAnimationFrame(update);
-</script>
+    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-11MG5031H4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-11MG5031H4');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-11MG5031H4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-11MG5031H4');
+    </script>
 </body>
 </html>
